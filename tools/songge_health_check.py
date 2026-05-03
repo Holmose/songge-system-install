@@ -261,11 +261,24 @@ def check_scene_library(r: Report):
         r.warn.append('缺少场景话术库，跳过话术门禁检查')
         return
     txt = SCENE_LIB.read_text(encoding='utf-8')
-    # Simple heuristic: if stable/verified markers absent, warn to manually review before adding new lines
-    if '✅已验证' in txt or '已验证' in txt:
-        r.ok.append('话术库包含验证标注，仍需人工确保每条绑定3次正反馈')
-    else:
-        r.warn.append('话术库未检测到“已验证”标注；后续入库需补3次正反馈证据')
+    if '## 话术验证索引' not in txt:
+        r.warn.append('话术库缺少“话术验证索引”；无法追踪 case_id 证据')
+        return
+    scene_count = len(re.findall(r'^## \d+\. ', txt, flags=re.M))
+    quality_count = txt.count('| 质量等级 | 理论版参考 |') + txt.count('| 质量等级 | 已验证版 |') + txt.count('| 质量等级 | 失效 |')
+    case_field_count = txt.count('| 正反馈 case_ids |')
+    if scene_count < 15:
+        r.warn.append(f'话术库场景数少于预期：{scene_count}/15')
+    if quality_count < scene_count:
+        r.warn.append(f'话术库沉淀状态缺质量等级字段：{quality_count}/{scene_count}')
+    if case_field_count < scene_count:
+        r.warn.append(f'话术库沉淀状态缺正反馈 case_ids 字段：{case_field_count}/{scene_count}')
+    verified_lines = [line for line in txt.splitlines() if '| 已验证版 |' in line]
+    bad_verified = [line for line in verified_lines if re.search(r'\| 已验证版 \| [0-2] \|', line) or '| - |' in line]
+    if bad_verified:
+        r.fail.append('话术库存在疑似未满3次或无case_id却标已验证版的条目')
+    elif quality_count >= scene_count and case_field_count >= scene_count:
+        r.ok.append(f'话术库门禁字段完整，场景数 {scene_count}；已验证版需人工确保绑定3次正反馈')
 
 def main():
     r = Report()
