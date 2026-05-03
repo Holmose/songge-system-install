@@ -1,0 +1,16 @@
+# Python/cache
+__pycache__/
+*.pyc
+*.pyo
+
+# OS/editor
+.DS_Store
+*.swp
+*.tmp
+
+# Logs/runtime
+*.log
+.env
+.env.*
+
+# Keep local archives/data tracked unless explicitly excluded by future rule

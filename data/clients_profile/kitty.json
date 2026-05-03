@@ -1,0 +1,45 @@
+{
+  "name": "Kitty",
+  "source": "抖音",
+  "date_added": "2026-04-27",
+  "stage": "初识期",
+  "tags": ["抖音", "刚加", "破冰期", "要具体不要虚的"],
+  "basic_info": {
+    "notes": "抖音直接加的，还不熟；喜欢具体的话，不喜欢虚的承诺"
+  },
+  "personality": {
+    "traits": [],
+    "communication": "配合度低，说'不感兴趣'，但对'可爱'有正面反应",
+    "interests": ["具体的话题"]
+  },
+  "patterns": {
+    "strengths": ["对具体词有反应"],
+    "weaknesses": ["不喜欢虚的承诺"],
+    "rejection_patterns": ["'不感兴趣'"]
+  },
+  "interaction": {
+    "chat_count": 1,
+    "date_count": 0,
+    "last_contact": "2026-04-27"
+  },
+  "chats_summary": [
+    {
+      "date": "2026-04-27",
+      "scene": "你问她喜不喜欢'可爱'",
+      "your_msg": "那换一个词可爱 喜不喜欢",
+      "her_msg": "！！ 喜欢",
+      "result": "她对'可爱'有正面反应",
+      "lesson": "她喜欢具体的词 不喜欢虚的"
+    },
+    {
+      "date": "2026-04-27",
+      "scene": "你说'有什么话我都会说'",
+      "your_msg": "有什么话我都会说",
+      "her_msg": "不感兴趣",
+      "result": "她不喜欢虚的承诺",
+      "lesson": "要具体 不要大而空的话"
+    }
+  ],
+  "created": "2026-04-27 23:45",
+  "updated": "2026-04-27 23:45"
+}

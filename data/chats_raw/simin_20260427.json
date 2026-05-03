@@ -1,0 +1,462 @@
+{
+  "name": "思敏",
+  "source": "牵手APP",
+  "date": "2026-04-27",
+  "raw_chats": [
+    {
+      "time": "03-21 00:06",
+      "direction": "setup",
+      "content": "已相互喜欢，可以开始聊天了"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "her",
+      "content": "忙工作啊"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "我刚忙完 今天忙一点"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "敏敏小朋友"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "her",
+      "content": "这样子啊"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "[语音] 13\" 对的呀，你这会儿在忙啥呢？我刚刚去夜市买东西吃来着，人山人海的，人挤人的，差点把我挤怀孕了。"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "你脱单了？"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "her",
+      "content": "可以算是吧"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "her",
+      "content": "但还没有在一起"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "算是？"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "her",
+      "content": "对啊"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "就好奇一下"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "her",
+      "content": "怪不得我说你这么忙怎么还知道上了"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "her",
+      "content": "原来还提示你了呢"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "肯定的"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "her",
+      "content": "哦"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "见几次了"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "her",
+      "content": "一次"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "那以后跟你聊天得保持保持距离了"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "不能再那么暧昧了"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "her",
+      "content": "怕我未来男朋友吃醋是吗"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "对啊"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "而且我也不是随便横刀夺爱的那种人"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "her",
+      "content": "哈哈哈"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "her",
+      "content": "我知道的"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "这你怎么知道"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "主要是你都愿意跟他牵手的，肯定是喜欢他啊"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "her",
+      "content": "我觉得和你聊天感觉到的"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "这么神奇啊"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "看来也是用心感受了"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "her",
+      "content": "神奇吗"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "对啊 很神奇"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "表情倒是挺可爱"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "her",
+      "content": "小喵喵本来就是可爱的呢"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "那你呢"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "her",
+      "content": "我吗"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "her",
+      "content": "我觉得我不可爱"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "咋会"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "你全身上下哪哪都可爱"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "除了嘴"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "her",
+      "content": "真的假的"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "比较喜欢说反话"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "her",
+      "content": "哦"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "her",
+      "content": "你怎么知道"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "我觉得和你聊天感觉到的"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "her",
+      "content": "那你很棒噢"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "当然"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "我的本事"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "her",
+      "content": "那很厉害了"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "学你说的"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "好了 不说了睡觉了"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "别人未来的女朋友"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "her",
+      "content": "什么噢"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "her",
+      "content": "那你还是别人未来的男朋友"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "her",
+      "content": "是吧"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "难道不是嘛"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "我们没在一块 那总会找人谈"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "不是我 就是别人"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "只要是开心的 相处开心舒适就好"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "her",
+      "content": "我们没在一起不是你不喜欢我嘛"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "her",
+      "content": "是的"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "喜欢啊"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "her",
+      "content": "真的假的"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "当然了"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "不然也不会心头一颤"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "her",
+      "content": "好吧"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "her",
+      "content": "没想到"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "哈哈哈"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "因为这个得亲口说"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "光想哪儿够"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "亲口不是说要亲嘴的意思"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "别被吓死了"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "her",
+      "content": "我知道啦"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "her",
+      "content": "我又不笨"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "her",
+      "content": "不会哈哈哈哈哈哈"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "那你觉得呢"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "her",
+      "content": "我觉得什么"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "心头抖了三抖好吧 刚发现是夸张了"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "her",
+      "content": "哈哈哈哈哈"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "好了 睡觉去"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "别人未来的女朋友"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "her",
+      "content": "这个语气起"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "her",
+      "content": "你和他？"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "her",
+      "content": "还好吧"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "her",
+      "content": "其实差不多"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "我不在意他怎么样 你开心就好"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "her",
+      "content": "我开心他"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "her",
+      "content": "你下班了？"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "刚忙完 你还挺关心我下班没"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "you",
+      "content": "真好"
+    },
+    {
+      "time": "2026-04-27",
+      "direction": "her",
+      "content": "关心一下还是可以的"
+    }
+  ]
+}
