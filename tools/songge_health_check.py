@@ -30,6 +30,7 @@ CLIENTS = SONGGE / 'data/clients.json'
 CASE_INDEX = ROOT_MEMORY / 'songge/05-case-index.md'
 MANIFEST = ROOT_MEMORY / 'songge/raw-data-protection-manifest-2026-05-04.md'
 SCENE_LIB = ROOT_MEMORY / 'songge/knowledge/12-scene-reply-library.md'
+CASE_FEEDBACK_TOOL = SONGGE / 'tools/case_feedback_update.py'
 
 RAW_DIRS = [
     Path('/var/minis/skills/songge/data/chats_raw'),
@@ -280,6 +281,21 @@ def check_scene_library(r: Report):
     elif quality_count >= scene_count and case_field_count >= scene_count:
         r.ok.append(f'话术库门禁字段完整，场景数 {scene_count}；已验证版需人工确保绑定3次正反馈')
 
+def check_feedback_tool(r: Report):
+    if not CASE_FEEDBACK_TOOL.exists():
+        r.warn.append(f'缺少案例反馈闭环工具：{CASE_FEEDBACK_TOOL}')
+        return
+    try:
+        subprocess.check_output(['python3', '-m', 'py_compile', str(CASE_FEEDBACK_TOOL)], stderr=subprocess.STDOUT, text=True)
+    except subprocess.CalledProcessError as e:
+        r.fail.append('案例反馈闭环工具语法检查失败：' + e.output.strip())
+        return
+    txt = CASE_FEEDBACK_TOOL.read_text(encoding='utf-8')
+    if '--dry-run' not in txt:
+        r.warn.append('案例反馈闭环工具缺少 --dry-run 预演保护')
+    else:
+        r.ok.append('案例反馈闭环工具存在且语法正常，支持 --dry-run')
+
 def main():
     r = Report()
     check_raw_manifest(r)
@@ -288,6 +304,7 @@ def main():
     check_secrets(r)
     check_git_status(r)
     check_scene_library(r)
+    check_feedback_tool(r)
     code = r.print()
     return code
 
