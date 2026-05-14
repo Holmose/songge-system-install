@@ -1,59 +1,76 @@
 #!/bin/sh
-# 松哥撩妹系统 V2 安装脚本
+# 松哥撩妹系统 V2 自动安装脚本
 #
-# 使用方式：
-# 1. 把 songge_install.sh 和 songge_system_v2_backup_encrypted.bin 放到同一目录
-# 2. 运行: bash songge_install.sh
-# 3. 输入密码完成安装
+# 一条命令搞定全部安装：
+# curl -s https://raw.githubusercontent.com/Holmose/songge-system-install/main/songge_install.sh | bash
 #
-# 密码请联系松哥获取
+# 或者保存后运行：
+# bash songge_install.sh
+
+set -e
 
 echo "=========================================="
-echo "松哥撩妹系统 V2 安装脚本"
+echo "松哥撩妹系统 V2 自动安装"
 echo "=========================================="
 echo ""
-echo "请确保以下文件在同一目录："
-echo "  - songge_install.sh（本文件）"
-echo "  - songge_system_v2_backup_encrypted.bin"
-echo ""
-echo "请输入解压密码："
-read -r password
 
-echo ""
-echo "正在解密并安装..."
-
-cd "$(dirname "$0")"
-
-if [ ! -f "songge_system_v2_backup_encrypted.bin" ]; then
-    echo ""
-    echo "❌ 错误：找不到加密备份包"
-    echo "请联系松哥获取下载链接"
+# 检测运行环境
+if [ ! -d "/var/minis" ]; then
+    echo "❌ 此脚本需要在 Minis iOS App 中运行"
     exit 1
 fi
 
-python3 << 'PYEOF'
+# 获取密码
+echo "请输入解压密码："
+read -r password
+
+if [ -z "$password" ]; then
+    echo "❌ 密码不能为空"
+    exit 1
+fi
+
+echo ""
+echo "正在下载加密包..."
+
+# 下载地址（从GitHub Release）
+DOWNLOAD_URL="https://github.com/Holmose/songge-system-install/releases/download/v2.0/songge_system_v2_backup_encrypted.bin"
+BACKUP_FILE="/var/minis/workspace/songge_system_v2_backup_encrypted.bin"
+
+# 下载
+curl -L -o "$BACKUP_FILE" "$DOWNLOAD_URL" --progress-bar
+
+if [ ! -f "$BACKUP_FILE" ]; then
+    echo "❌ 下载失败"
+    exit 1
+fi
+
+echo ""
+echo "✅ 下载完成，正在解密..."
+
+# 解密并解压
+python3 << PYEOF
 import sys, base64, tarfile, os
 from cryptography.fernet import Fernet
 from cryptography.hazmat.primitives import hashes
 from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
 
-password = sys.argv[1] if len(sys.argv) > 1 else input("密码: ")
-encrypted_file = "songge_system_v2_backup_encrypted.bin"
+password = "$password"
+encrypted_file = "/var/minis/workspace/songge_system_v2_backup_encrypted.bin"
 
 salt = b'songge_sync_salt_v1'
 kdf = PBKDF2HMAC(algorithm=hashes.SHA256(), length=32, salt=salt, iterations=100000)
 key = base64.urlsafe_b64encode(kdf.derive(password.encode()))
 f = Fernet(key)
 
-with open(encrypted_file, 'rb') as fin:
-    encrypted = fin.read()
-
 try:
+    with open(encrypted_file, 'rb') as fin:
+        encrypted = fin.read()
+    
     decrypted = f.decrypt(encrypted)
     print("✅ 解密成功")
-except:
+except Exception as e:
     print("❌ 解密失败！密码可能不对")
-    print("请联系松哥获取最新密码")
+    print("请确认密码是否正确，联系松哥获取最新密码")
     sys.exit(1)
 
 temp_tar = '/var/minis/workspace/_temp_songge.tar.gz'
@@ -75,7 +92,12 @@ if [ $? -eq 0 ]; then
     echo "✅ 安装完成！"
     echo "=========================================="
     echo ""
-    echo "验证：ls /var/minis/skills/ | grep songge"
+    echo "验证安装："
+    ls /var/minis/skills/ 2>/dev/null | grep songge || echo "（Skills目录验证）"
+    echo ""
+    echo "使用方式："
+    echo "  分析聊天：说 '分析聊天' / '怎么回'"
+    echo "  判断状态：说 '判断阶段' / '判断窗口'"
 else
     echo "❌ 安装失败"
 fi
