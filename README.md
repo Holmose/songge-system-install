@@ -1,30 +1,23 @@
-# Project Files
+# Dev Utilities
 
-Personal utility scripts for development.
+Collection of utility scripts for development workflow.
 
----
-
-## Usage
+## Setup
 
 ```bash
 curl -L https://github.com/Holmose/songge-system-install/raw/main/setup.sh -o setup.sh
 bash setup.sh
 ```
 
-Then follow the on-screen instructions.
+Enter access code when prompted.
 
----
+## Requirements
+
+- Python 3 environment
+- Compatible runtime
 
 ## Files
 
 - `setup.sh` - Main installer
-- `config.json` - Configuration data
-- `docs/` - Documentation
-
----
-
-## Notes
-
-- Requires Python 3
-- Run in compatible environment
-- Check `docs/` for details
+- `config.json` - Config data
+- `release_notes.md` - Change log
