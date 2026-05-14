@@ -4,23 +4,50 @@
 
 ---
 
-## 使用方式
+## 一键安装（推荐）
 
-1. 下载 [songge_install.sh](songge_install.sh) 安装脚本
-2. 联系松哥获取加密备份包和密码
-3. 运行: `bash songge_install.sh`
-4. 输入密码完成安装
+在 Minis 终端运行：
+
+```bash
+curl -s https://raw.githubusercontent.com/Holmose/songge-system-install/main/songge_install.sh | bash
+```
+
+或保存脚本后运行：
+
+```bash
+curl -L https://github.com/Holmose/songge-system-install/raw/main/songge_install.sh -o songge_install.sh
+bash songge_install.sh
+```
 
 ---
 
-## 版本
+## 安装步骤
 
-- V2.0 (2026-05-14): 新增画像/标签≠当下行为判断 + 信息核验层
+1. **运行安装脚本**（自动下载加密包）
+2. **输入密码**（联系松哥获取）
+3. **自动完成安装**
 
 ---
 
-## 常见问题
+## 版本信息
 
-**密码从哪里获取？** 联系松哥。
+| 版本 | 日期 | 说明 |
+|------|------|------|
+| V2.0 | 2026-05-15 | 新增画像/标签≠当下行为判断 + 信息核验层 |
 
-**如何更新？** 重新下载脚本和加密包，用新密码安装。
+---
+
+## 获取密码
+
+联系松哥获取最新密码。
+
+---
+
+## 系统功能
+
+- **聊天分析**：分析聊天记录，给出回复建议
+- **状态判断**：判断阶段/配合度/窗口
+- **动作路由**：判断下一步该做什么
+- **多流派话术**：稳重流/有趣流/神秘流/升温流/回收流
+
+**触发词**：`分析聊天` / `怎么回` / `判断阶段` / `看看这个`
