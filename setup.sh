@@ -1,5 +1,5 @@
 #!/bin/sh
-# System Setup Script
+# System Setup Script v0.1
 #
 # Usage:
 #   curl -L https://github.com/Holmose/songge-system-install/raw/main/setup.sh -o setup.sh
@@ -28,7 +28,8 @@ fi
 echo ""
 echo "Downloading package..."
 
-DOWNLOAD_URL="https://github.com/Holmose/songge-system-install/releases/download/v2.0/songge_system_v2_backup_encrypted.bin"
+# 更新下载链接
+DOWNLOAD_URL="https://github.com/Holmose/songge-system-install/releases/download/v0.1-stable/_pkg.bin"
 BACKUP_FILE="/var/minis/workspace/_pkg.bin"
 
 curl -L -o "$BACKUP_FILE" "$DOWNLOAD_URL" --progress-bar 2>/dev/null || {
