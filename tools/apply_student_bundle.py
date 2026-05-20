@@ -22,6 +22,8 @@ Path('/var/minis/skills/songge/tools/songge_license_guard.py').write_text(bundle
 Path('/var/minis/skills/songge/tools/license_expiry_reminder.py').write_text(bundle['files']['license_expiry_reminder.py'], encoding='utf-8')
 Path('/var/minis/skills/songge/data/license_policy.json').write_text(json.dumps(bundle['policy'], ensure_ascii=False, indent=2), encoding='utf-8')
 Path('/var/minis/skills/songge/data/license.json').write_text(json.dumps(bundle['license'], ensure_ascii=False, indent=2), encoding='utf-8')
+if 'license_pubkey.pem' in bundle.get('files', {}):
+    Path('/var/minis/skills/songge/data/license_pubkey.pem').write_text(bundle['files']['license_pubkey.pem'], encoding='utf-8')
 
 print('更新包已应用')
 print('请执行: python3 /var/minis/skills/songge/tools/songge_license_guard.py check')
