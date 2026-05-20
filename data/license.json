@@ -1,0 +1,14 @@
+{
+  "student_id": "吴育阳",
+  "device_hash": "c20e2a5c59ecccc39ec475baea837a8eb73dce510dc8f4a007557780a026480b",
+  "issued_at": 1779282414,
+  "expires_at": 1781874414,
+  "payload": {
+    "student_id": "吴育阳",
+    "device_hash": "c20e2a5c59ecccc39ec475baea837a8eb73dce510dc8f4a007557780a026480b",
+    "issued_at": 1779282414,
+    "expires_at": 1781874414,
+    "edition": "student"
+  },
+  "signature": "cjTmBKSzsf6I+nEGLyvh8zpWGtQ/jmMHFu69Nk46ZbpsmLRyudeIhLGN13Hg+xD55VhSrxQRCtRXu3LYcUpH561vVjgI+IWXZiMQ0W8cXZ/codvVBWHcEBq2hxTeQvCxUG7E9NMH/bAOlQC4ZhsvfVYtnIL8HrsLUL0ewOqzjr4lQIf8E1KFVcmLTzrQ1qQduQSDtfnovX+D0u8XHEs2aU/lPoq0hqz8KW0AWdcn6LQkv7a38CdORhSUuXPZ8aO48KSLt5MLj8OPwt4jHBRVKoTTwJQu2zxn1BbFLOOg/IPMc7KNZj3AEUhRfqocmiMJmIyg/Lbv01vPPqTKsZlsYQ=="
+}

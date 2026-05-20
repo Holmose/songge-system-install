@@ -1,0 +1,20 @@
+{
+  "students": [
+    {
+      "student_id": "demo_student",
+      "device_hash": "c20e2a5c59ecccc39ec475baea837a8eb73dce510dc8f4a007557780a026480b",
+      "expires_at": 1781849572,
+      "status": "revoked",
+      "created_at": 1779257572,
+      "updated_at": 1779257703
+    },
+    {
+      "student_id": "吴育阳",
+      "device_hash": "c20e2a5c59ecccc39ec475baea837a8eb73dce510dc8f4a007557780a026480b",
+      "expires_at": 1781874413,
+      "status": "active",
+      "created_at": 1779282413,
+      "updated_at": 1779282413
+    }
+  ]
+}
