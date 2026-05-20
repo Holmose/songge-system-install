@@ -1,0 +1,9 @@
+{
+  "mode": "student_enforced",
+  "master_devices": [
+    "c20e2a5c59ecccc39ec475baea837a8eb73dce510dc8f4a007557780a026480b"
+  ],
+  "license_path": "/var/minis/skills/songge/data/license.json",
+  "public_key_path": "/var/minis/skills/songge/data/license_pubkey.pem",
+  "deny_message": "未检测到有效设备授权，系统拒绝分析与输出。请先完成绑定。"
+}
