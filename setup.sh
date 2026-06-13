@@ -25,7 +25,7 @@ fi
 echo ""
 echo "Downloading package..."
 
-DOWNLOAD_URL="https://github.com/Holmose/songge-system-install/releases/download/v20260603/_pkg.bin"
+DOWNLOAD_URL="https://github.com/Holmose/songge-system-install/releases/download/v20260614/_pkg.bin"
 BACKUP_FILE="/var/minis/workspace/_pkg.bin"
 
 curl -L -o "$BACKUP_FILE" "$DOWNLOAD_URL" --progress-bar 2>/dev/null || {
